@@ -1,0 +1,38 @@
+qia-skeleton, qia-paginator {
+  display: inline-block;
+  margin: 1em;
+  border: 1px dotted gray;
+  padding: 1em;
+}
+
+
+.qia-skeleton-container {
+  display: inline-block;
+
+  margin: 1em;
+  border: 1px dashed gray;
+  padding: 1em;
+}
+
+.qia-skeleton-container qia-skeleton {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+
+.paged-content {
+  margin: 1em;
+  border: 1px dashed gray;
+  padding: 1em;
+}
+
+.paged-content .qia-paginator-container {
+  text-align: center;
+}
+
+.paged-content .qia-paginator-container qia-paginator {
+  margin: 0;
+  border: none;
+  padding: 0;
+}

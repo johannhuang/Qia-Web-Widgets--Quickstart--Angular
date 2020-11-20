@@ -1,7 +1,17 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
 
-import { AppComponent } from './app.component';
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+import 'qia-widgets'
+
+import { AppComponent } from './app.component'
+
+// @ts-ignore
+window.React = React
+// @ts-ignore
+window.ReactDOM = ReactDOM
 
 @NgModule({
   declarations: [
@@ -10,6 +20,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })
